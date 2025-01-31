@@ -16,7 +16,7 @@ fovCircle.Filled = false
 fovCircle.Transparency = 1
 fovCircle.Visible = true
 
-local maxFOVDistance = 30 -- Adjustable max distance from screen center
+local maxFOVDistance = 100 -- Adjustable max distance from screen center
 
 -- Function to update the FOV Circle position
 local function updateFOVCircle()
@@ -75,7 +75,7 @@ local function updateCameraFocus(targetPosition)
     if camera and isRightMouseDown then
         local currentCFrame = camera.CFrame
         local newCFrame = CFrame.new(currentCFrame.Position, targetPosition)
-        camera.CFrame = currentCFrame:Lerp(newCFrame, 0.15) -- Adjust tracking smoothness
+        camera.CFrame = currentCFrame:Lerp(newCFrame, 0.1) -- Adjust tracking smoothness
     end
 end
 
