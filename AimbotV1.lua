@@ -16,7 +16,7 @@ fovCircle.Filled = false
 fovCircle.Transparency = 1
 fovCircle.Visible = true
 
-local maxFOVDistance = 10 -- Adjustable max distance from screen center
+local maxFOVDistance = 30 -- Adjustable max distance from screen center
 
 -- Function to update the FOV Circle position
 local function updateFOVCircle()
