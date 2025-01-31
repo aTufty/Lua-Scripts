@@ -20,11 +20,9 @@ local Window = Rayfield:CreateWindow({
  
  local Tab = Window:CreateTab("Aim", "locate-fixed")
  local Section = Tab:CreateSection("Aimbot")
- local Toggle = Tab:CreateToggle({
-   Name = "Toggle Aimbot",
-   CurrentValue = false,
-   Flag = "Toggle1",
-   Callback = function(Value) local Players = game:GetService("Players")
+local Button = Tab:CreateButton({
+   Name = "Enable Aimbot",
+   Callback = function() local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 local UserInputService = game:GetService("UserInputService")
