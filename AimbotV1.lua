@@ -75,7 +75,7 @@ local function updateCameraFocus(targetPosition)
     if camera and isRightMouseDown then
         local currentCFrame = camera.CFrame
         local newCFrame = CFrame.new(currentCFrame.Position, targetPosition)
-        camera.CFrame = currentCFrame:Lerp(newCFrame, 0.3) -- Adjust tracking smoothness
+        camera.CFrame = currentCFrame:Lerp(newCFrame, 0.5) -- Adjust tracking smoothness
     end
 end
 
